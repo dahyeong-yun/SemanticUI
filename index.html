@@ -11,23 +11,55 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
   <!-- semantic ui lib -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.css" />
+
+  <!-- custom -->
+  <link rel="stylesheet" href="./custom.css">
 </head>
 
 <body>
   <!-- 상단 고정 바 -->
     <div class="ui fixed inverted menu">
         <div class="ui container">
-            <a href="#" class="header item">Logo</a>
+            <a href="#" class="header item" onclick="location.href = './index.html'">Logo</a>
             <a href="#" class="item">Menu</a>
             <a href="#" class="item">Menu</a>
             <div class="right item">
                 <button class="ui inverted button" type="button" name="button">Login</button>
-                <button class="ui inverted button" type="button" name="button">Login</button>
+                <button class="ui inverted button" type="button" name="button" onclick="location.href = './myPage.html'">My Page</button>
                 <div class="ui inverted button">Login</div>
-                <div class="ui inverted button">Sign Up</div>
+                <div class="ui inverted button" onclick="location.href = './memberJoin.html'">Sign Up</div>
             </div>
         </div>
     </div>
+
+    <!-- item list  -->
+    <div class="ui container">
+        <!-- first item -->
+        <div class="ui four cards">
+            <div class="ui card">
+                <div class="image dimmable">
+                    <img src="./img/1.png" alt="img">
+                </div>
+
+                <div class="content">
+                    <div class="header">
+                        로열 허니 블렌드
+                    </div>
+                    <div class="discription">
+                        로열 허니 블렌드 입니다.
+                    </div>
+                </div>
+                <div class="extra">
+                     extra
+                </div>
+            </div>
+
+            <div class="ui card"></div>
+            <div class="ui card"></div>
+            <div class="ui card"></div>
+        </div>
+    </div>
+
 
 </body>
 
