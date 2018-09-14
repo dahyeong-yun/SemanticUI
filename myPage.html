@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Main Page</title>
+
+  <!-- semantic ui -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
+  <!-- semantic ui lib -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.css" />
+
+  <!-- custom -->
+  <link rel="stylesheet" href="./custom.css">
+    <style media="screen">
+        #navbar {
+            margin-bottom: 1rem;
+        }
+        #myPageContent{
+            padding-top: 6rem;
+        }
+    </style>
+</head>
+
+<body>
+  <!-- 상단 고정 바 -->
+    <div id="navbar" class="ui fixed inverted menu">
+        <div class="ui container">
+            <a href="#" class="header item" onclick="location.href = './index.html'">Logo</a>
+            <a href="#" class="item">Menu</a>
+            <a href="#" class="item">Menu</a>
+            <div class="right item">
+                <button class="ui inverted button" type="button" name="button">Login</button>
+                <button class="ui inverted button" type="button" name="button">Login</button>
+                <div class="ui inverted button">Login</div>
+                <div class="ui inverted button" onclick="location.href = './memberJoin.html'">Sign Up</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- my info  -->
+    <div id="myPageContent" class="ui container">
+        <div class="ui grid">
+            <!-- my page menu -->
+            <div class="four wide column">
+                <div class="ui stacked segments">
+                    <div class="ui segment">One</div>
+                    <div class="ui segment">Two</div>
+                    <div class="ui segment">Three</div>
+                </div>
+            </div>
+
+            <div class="twelve wide column">
+                <h2 class="ui header">계정 설정</h2>
+                <table class="ui celled padded table">
+                      <thead>
+                        <tr><th class="single line">Evidence Rating</th>
+                        <th>Effect</th>
+                        <th>Efficacy</th>
+                        <th>Consensus</th>
+                        <th>Comments</th>
+                      </tr></thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <h2 class="ui center aligned header">A</h2>
+                          </td>
+                          <td class="single line">
+                            Power Output
+                          </td>
+                          <td>
+                            <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+                          </td>
+                          <td class="right aligned">
+                            80% <br>
+                            <a href="#">18 studies</a>
+                          </td>
+                          <td>Creatine supplementation is the reference compound for increasing muscular creatine levels; there is variability in this increase, however, with some nonresponders.</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <h2 class="ui center aligned header">A</h2>
+                          </td>
+                          <td class="single line">
+                            Weight
+                          </td>
+                          <td>
+                            <div class="ui star rating" data-rating="3" data-max-rating="3"></div>
+                          </td>
+                          <td class="right aligned">
+                            100% <br>
+                            <a href="#">65 studies</a>
+                          </td>
+                          <td>Creatine is the reference compound for power improvement, with numbers from one meta-analysis to assess potency</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
