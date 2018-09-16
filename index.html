@@ -1,31 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="utf-8">
-  <title>Main Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Main Page</title>
 
-  <!-- semantic ui -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
-  <!-- semantic ui lib -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.css" />
+    <!-- semantic ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/semantic.min.js"></script>
 
-  <!-- custom -->
-  <link rel="stylesheet" href="./custom.css">
+    <!-- semantic ui lib -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/button.css" />
+
+    <!-- custom -->
+    <link rel="stylesheet" href="./custom.css">
+    <style media="screen">
+        #mainPageContent{
+          padding-top: 6rem;
+        }
+        #searchInput{
+          padding-top: 6rem;
+        }
+    </style>
 </head>
 
 <body>
-  <!-- 상단 고정 바 -->
+    <!-- 상단 고정 바 -->
     <div class="ui fixed inverted menu">
         <div class="ui container">
             <a href="#" class="header item" onclick="location.href = './index.html'">Logo</a>
-            <a href="#" class="item">Menu</a>
-            <a href="#" class="item">Menu</a>
+            <a href="#" class="item">Item</a>
+            <a href="#" class="item">Tips!</a>
+            <!-- 검색창 -->
+                <div class="centered item">
+                    <div class="ui labeled input">
+                        <div class="ui dropdown label" tabindex="0">
+                            <div class="text">
+                                Category
+                            </div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu transition hidden" tabindex="-1">
+                                <div class="item">item1</div>
+                                <div class="item">item2</div>
+                                <div class="item">item3</div>
+                            </div>
+                        </div>
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <div class="ui inverted green button">Search</div>
+                    </div>
+                </div>
+            <!-- 로그인 관련 메뉴 -->
             <div class="right item">
-                <button class="ui inverted button" type="button" name="button">Login</button>
                 <button class="ui inverted button" type="button" name="button" onclick="location.href = './myPage.html'">My Page</button>
+                <button class="ui inverted button" type="button" name="button">Logout</button>
                 <div class="ui inverted button">Login</div>
                 <div class="ui inverted button" onclick="location.href = './memberJoin.html'">Sign Up</div>
             </div>
@@ -33,14 +61,14 @@
     </div>
 
     <!-- item list  -->
-    <div class="ui container">
+    <div id="mainPageContent" class="ui container">
+        <h2 class="ui header">추천 제품 리스트</h2>
         <!-- first item -->
         <div class="ui four cards">
             <div class="ui card">
                 <div class="image dimmable">
                     <img src="./img/1.png" alt="img">
                 </div>
-
                 <div class="content">
                     <div class="header">
                         로열 허니 블렌드
@@ -54,13 +82,123 @@
                 </div>
             </div>
 
-            <div class="ui card"></div>
-            <div class="ui card"></div>
-            <div class="ui card"></div>
+            <div class="ui card">
+                <div class="image dimmable">
+                    <img src="./img/1.png" alt="img">
+                </div>
+                <div class="content">
+                    <div class="header">
+                        로열 허니 블렌드
+                    </div>
+                    <div class="discription">
+                        로열 허니 블렌드 입니다.
+                    </div>
+                </div>
+                <div class="extra">
+                     extra
+                </div>
+            </div>
+
+            <div class="ui card">
+                <div class="image dimmable">
+                    <img src="./img/1.png" alt="img">
+                </div>
+                <div class="content">
+                    <div class="header">
+                        로열 허니 블렌드
+                    </div>
+                    <div class="discription">
+                        로열 허니 블렌드 입니다.
+                    </div>
+                </div>
+                <div class="extra">
+                     extra
+                </div>
+            </div>
+
+            <div class="ui card">
+                <div class="image dimmable">
+                    <img src="./img/1.png" alt="img">
+                </div>
+                <div class="content">
+                    <div class="header">
+                        로열 허니 블렌드
+                    </div>
+                    <div class="discription">
+                        로열 허니 블렌드 입니다.
+                    </div>
+                </div>
+                <div class="extra">
+                     extra
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 검색 창  -->
+    <div id="searchInput" class="ui container">
+        <div class="ui labeled input">
+            <div class="ui dropdown label" tabindex="0">
+                <div class="text">
+                    Category
+                </div>
+                <i class="dropdown icon"></i>
+                <div class="menu transition hidden" tabindex="-1">
+                    <div class="item">item1</div>
+                    <div class="item">item2</div>
+                    <div class="item">item3</div>
+                </div>
+            </div>
+            <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+            <div class="ui teal button">Search</div>
         </div>
     </div>
 
-
+    <!-- footer -->
+    <div class="ui inverted vertical footer segment">
+        <div id="footerContainer" class="ui center aligned container">
+          <div class="ui stackable inverted divided grid">
+            <div class="three wide column">
+              <h4 class="ui inverted header">Group 1</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Link One</a>
+                <a href="#" class="item">Link Two</a>
+                <a href="#" class="item">Link Three</a>
+                <a href="#" class="item">Link Four</a>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">Group 2</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Link One</a>
+                <a href="#" class="item">Link Two</a>
+                <a href="#" class="item">Link Three</a>
+                <a href="#" class="item">Link Four</a>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">Group 3</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Link One</a>
+                <a href="#" class="item">Link Two</a>
+                <a href="#" class="item">Link Three</a>
+                <a href="#" class="item">Link Four</a>
+              </div>
+            </div>
+            <div class="seven wide column">
+              <h4 class="ui inverted header">Footer Header</h4>
+              <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+            </div>
+          </div>
+          <div class="ui inverted section divider"></div>
+          <img src="assets/images/logo.png" class="ui centered mini image">
+          <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#">Site Map</a>
+            <a class="item" href="#">Contact Us</a>
+            <a class="item" href="#">Terms and Conditions</a>
+            <a class="item" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
