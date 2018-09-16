@@ -17,20 +17,40 @@
     <style media="screen">
         #myPageContent{
             padding-top: 6rem;
+            padding-bottom: 6rem;
         }
     </style>
 </head>
 
 <body>
-  <!-- 상단 고정 바 -->
-    <div id="navbar" class="ui fixed inverted menu">
+    <!-- 상단 고정 바 -->
+    <div class="ui fixed inverted menu">
         <div class="ui container">
             <a href="#" class="header item" onclick="location.href = './index.html'">Logo</a>
-            <a href="#" class="item">Menu</a>
-            <a href="#" class="item">Menu</a>
+            <a href="#" class="item">Item</a>
+            <a href="#" class="item">Tips!</a>
+            <!-- 검색창 -->
+                <div class="centered item">
+                    <div class="ui labeled input">
+                        <div class="ui dropdown label" tabindex="0">
+                            <div class="text">
+                                Category
+                            </div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu transition hidden" tabindex="-1">
+                                <div class="item">item1</div>
+                                <div class="item">item2</div>
+                                <div class="item">item3</div>
+                            </div>
+                        </div>
+                        <input type="text" name="" value="" placeholder="검색어를 입력해 주세요">
+                        <div class="ui inverted green button">Search</div>
+                    </div>
+                </div>
+            <!-- 로그인 관련 메뉴 -->
             <div class="right item">
-                <button class="ui inverted button" type="button" name="button">Login</button>
-                <button class="ui inverted button" type="button" name="button">Login</button>
+                <button class="ui inverted button" type="button" name="button" onclick="location.href = './myPage.html'">My Page</button>
+                <button class="ui inverted button" type="button" name="button">Logout</button>
                 <div class="ui inverted button">Login</div>
                 <div class="ui inverted button" onclick="location.href = './memberJoin.html'">Sign Up</div>
             </div>
@@ -42,6 +62,7 @@
         <div class="ui grid">
             <!-- my page menu -->
             <div class="four wide column">
+                <h2 class="ui header">마이 메뉴</h2>
                 <div class="ui stacked segments">
                     <div class="ui segment">One</div>
                     <div class="ui segment">Two</div>
@@ -98,6 +119,52 @@
         </div>
     </div>
 
+    <!-- footer -->
+    <div class="ui inverted vertical footer segment">
+        <div id="footerContainer" class="ui center aligned container">
+          <div class="ui stackable inverted divided grid">
+            <div class="three wide column">
+              <h4 class="ui inverted header">Group 1</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Link One</a>
+                <a href="#" class="item">Link Two</a>
+                <a href="#" class="item">Link Three</a>
+                <a href="#" class="item">Link Four</a>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">Group 2</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Link One</a>
+                <a href="#" class="item">Link Two</a>
+                <a href="#" class="item">Link Three</a>
+                <a href="#" class="item">Link Four</a>
+              </div>
+            </div>
+            <div class="three wide column">
+              <h4 class="ui inverted header">Group 3</h4>
+              <div class="ui inverted link list">
+                <a href="#" class="item">Link One</a>
+                <a href="#" class="item">Link Two</a>
+                <a href="#" class="item">Link Three</a>
+                <a href="#" class="item">Link Four</a>
+              </div>
+            </div>
+            <div class="seven wide column">
+              <h4 class="ui inverted header">Footer Header</h4>
+              <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+            </div>
+          </div>
+          <div class="ui inverted section divider"></div>
+          <img src="assets/images/logo.png" class="ui centered mini image">
+          <div class="ui horizontal inverted small divided link list">
+            <a class="item" href="#">Site Map</a>
+            <a class="item" href="#">Contact Us</a>
+            <a class="item" href="#">Terms and Conditions</a>
+            <a class="item" href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
 </body>
 
 </html>
